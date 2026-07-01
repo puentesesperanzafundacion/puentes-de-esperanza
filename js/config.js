@@ -13,7 +13,7 @@ const CONFIG = {
   // INFORMACIÓN INSTITUCIONAL
   // ──────────────────────────────────────────────
   org: {
-    name: "Fundación Puentes de Esperanza",
+    name: "Proyecto Puentes de Esperanza",
     tagline: "Acompañamos. Apoyamos. Construimos futuros. Juntos, sin fronteras.",
     mision: "Brindar orientación, acompañamiento y asistencia jurídica gratuita a personas migrantes, solicitantes de refugio, refugiadas y personas en contexto de movilidad humana, garantizando el pleno ejercicio de sus derechos.",
     vision: "Ser una organización de referencia en México en la defensa y promoción de los derechos de las personas en movilidad, contribuyendo a la construcción de una sociedad más justa, inclusiva y sin fronteras.",
@@ -32,7 +32,7 @@ const CONFIG = {
   // ──────────────────────────────────────────────
   contacto: {
     email: "puentes.esperanza.fundacion@gmail.com",
-    whatsapp: "525512345678",          // número sin + ni espacios
+    whatsapp: "525574300159",          // número sin + ni espacios
     whatsappTexto: "Hola, necesito orientación sobre mi situación migratoria.",
     horario: "Lunes a Viernes · 9:00 – 17:00 hrs",
     direccion: "Ciudad de México, México",
