@@ -201,7 +201,20 @@
   border-radius: var(--radius-xl);
   overflow: hidden;
   aspect-ratio: 4/3;
-  background: var(--color-crema-dark);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-borde);
+}
+
+.about-image-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .about-image-accent {
