@@ -244,11 +244,31 @@ function initForm() {
     btn.disabled = true;
     btn.textContent = 'Enviando…';
 
-    // Simulación de envío (conectar a backend / Google Sheets / EmailJS)
-    await new Promise(resolve => setTimeout(resolve, 1200));
+    // Envío real a Formspree
+    const formData = new FormData(form);
+    try {
+      const response = await fetch('https://formspree.io/f/mvzjvqqv', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
 
-    form.style.display = 'none';
-    if (successMsg) successMsg.classList.add('visible');
+      if (response.ok) {
+        form.style.display = 'none';
+        if (successMsg) successMsg.classList.add('visible');
+      } else {
+        const data = await response.json();
+        btn.disabled = false;
+        btn.textContent = 'Enviar solicitud de orientación';
+        alert('Hubo un problema al enviar. Por favor intenta de nuevo o escríbenos por WhatsApp.');
+        console.error('Formspree error:', data);
+      }
+    } catch (error) {
+      btn.disabled = false;
+      btn.textContent = 'Enviar solicitud de orientación';
+      alert('Error de conexión. Por favor verifica tu internet e intenta de nuevo.');
+      console.error('Network error:', error);
+    }
   });
 }
 
