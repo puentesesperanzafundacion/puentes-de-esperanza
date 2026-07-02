@@ -38,8 +38,8 @@ const CONFIG = {
     direccion: "Ciudad de México, México",
     ciudad: "Ciudad de México",
     redes: {
-      facebook:  "",
-      instagram: "",
+      facebook:  "https://www.facebook.com/profile.php?id=61591408145259",
+      instagram: "https://www.instagram.com/puentes.esperanza.fundacion",
       twitter:   "",
       linkedin:  "",
       youtube:   ""
